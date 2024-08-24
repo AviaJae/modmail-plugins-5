@@ -82,7 +82,7 @@ class ExtendedUtils(commands.Cog, name=__plugin_name__):
         if mode == valids[1]:
             # for developers usage
             # make sure the package was installed before running the script
-            # install command: pip install -e path
+            # install command: 'pip install -e path', or 'pipenv install -e path'
             return
 
         if modmail_utils is None or not self._is_latest():
