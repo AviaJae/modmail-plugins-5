@@ -212,7 +212,7 @@ class GiveawayView(View):
         time_left = self.giveaway_end - now_utc
         time_remaining = format_time_remaining(time_left)
 
-        embed = discord.Embed(title=self.cog.giveaway_title, colour=0x00FF00)
+        embed = discord.Embed(title=self.cog.giveaway_title, colour=0xFF0000)
         embed.set_author(**self.cog.author_data("system", extra="giveaway"))
         embed.description = f"React with {self.cog.giveaway_emoji} to enter the giveaway!"
         embed.add_field(name=f"{GIFT} Prize:", value=self.giveaway_prize)
